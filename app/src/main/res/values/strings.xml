@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">UDPリフレクター</string>
+
+    <string name="label_my_address">このデバイスの現在のIP</string>
+    <string name="label_receive_port">受信ポート</string>
+
+    <string name="label_send_address">転送先IP</string>
+    <string name="label_dot">.</string>
+    <string name="label_send_port">転送先ポート</string>
+
+    <string name="label_switch">転送を開始する</string>
+
+    <string name="info_receive_port">このポートで受信したデータを、以下の転送先に送信します。</string>
+    <string name="info_switch_enabled1">転送処理は、サービスとしてバックグラウンドで行います。</string>
+    <string name="info_switch_enabled2">そのため、転送の開始を [ ON ] にしておけば、この画面を閉じた後でも転送処理は行われます。</string>
+</resources>

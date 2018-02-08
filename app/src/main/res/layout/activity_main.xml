@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="@color/mainBackground"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="biz.riverone.udpreflector.MainActivity">
+
+    <LinearLayout
+        android:padding="@dimen/mainPadding"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+        <TextView
+            android:text="@string/label_my_address"
+            android:textSize="@dimen/textSizeMiddle"
+            android:textColor="@color/mainForeground"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/textViewMyIpAddress"
+            android:gravity="end"
+            android:textSize="@dimen/textSizeMiddle"
+            android:textColor="@color/mainForeground"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:layout_marginTop="30dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:text="@string/label_receive_port"
+                android:textSize="@dimen/textSizeMiddle"
+                android:textColor="@color/mainForeground"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <EditText
+                android:id="@+id/editTextReceivePort"
+                android:textSize="@dimen/textSizeMiddle"
+                android:maxLength="5"
+                android:layout_margin="@dimen/editTextMargin"
+                android:background="@color/mainEditText"
+                android:inputType="number"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <TextView
+            android:layout_marginTop="8dp"
+            android:text="@string/info_receive_port"
+            android:textColor="@color/mainForeground"
+            android:layout_marginStart="@dimen/infoIndent"
+            android:layout_marginLeft="@dimen/infoIndent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_marginTop="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:text="@string/label_send_address"
+                android:textSize="@dimen/textSizeMiddle"
+                android:textColor="@color/mainForeground"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <EditText
+                android:id="@+id/editTextSendAddress0"
+                android:textSize="@dimen/textSizeMiddle"
+                android:maxLength="3"
+                android:layout_margin="@dimen/editTextMargin"
+                android:background="@color/mainEditText"
+                android:inputType="number"
+                android:layout_weight="3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:text="@string/label_dot"
+                android:textSize="@dimen/textSizeMiddle"
+                android:textColor="@color/mainForeground"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <EditText
+                android:id="@+id/editTextSendAddress1"
+                android:textSize="@dimen/textSizeMiddle"
+                android:maxLength="3"
+                android:layout_margin="@dimen/editTextMargin"
+                android:background="@color/mainEditText"
+                android:inputType="number"
+                android:layout_weight="3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:text="@string/label_dot"
+                android:textSize="@dimen/textSizeMiddle"
+                android:textColor="@color/mainForeground"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <EditText
+                android:id="@+id/editTextSendAddress2"
+                android:textSize="@dimen/textSizeMiddle"
+                android:maxLength="3"
+                android:layout_margin="@dimen/editTextMargin"
+                android:background="@color/mainEditText"
+                android:inputType="number"
+                android:layout_weight="3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:text="@string/label_dot"
+                android:textSize="@dimen/textSizeMiddle"
+                android:textColor="@color/mainForeground"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <EditText
+                android:id="@+id/editTextSendAddress3"
+                android:textSize="@dimen/textSizeMiddle"
+                android:maxLength="3"
+                android:layout_margin="@dimen/editTextMargin"
+                android:background="@color/mainEditText"
+                android:inputType="number"
+                android:layout_weight="3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:text="@string/label_send_port"
+                android:textSize="@dimen/textSizeMiddle"
+                android:textColor="@color/mainForeground"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <EditText
+                android:id="@+id/editTextSendPort"
+                android:textSize="@dimen/textSizeMiddle"
+                android:maxLength="5"
+                android:layout_margin="@dimen/editTextMargin"
+                android:background="@color/mainEditText"
+                android:inputType="number"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_marginTop="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:text="@string/label_switch"
+                android:textSize="@dimen/textSizeMiddle"
+                android:textColor="@color/mainForeground"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <Switch
+                android:id="@+id/switchEnabled"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <TextView
+            android:layout_marginTop="8dp"
+            android:text="@string/info_switch_enabled1"
+            android:textColor="@color/mainForeground"
+            android:layout_marginStart="@dimen/infoIndent"
+            android:layout_marginLeft="@dimen/infoIndent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:text="@string/info_switch_enabled2"
+            android:textColor="@color/mainForeground"
+            android:layout_marginStart="@dimen/infoIndent"
+            android:layout_marginLeft="@dimen/infoIndent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:background="#666"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" />
+</LinearLayout>
