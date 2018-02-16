@@ -20,6 +20,7 @@ import biz.riverone.udpreflector.services.UdpReflectorService
  * 2018.2.7 J.Kawahara 新規作成
  * 2018.2.7 J.Kawahara ver.1.00 初版公開
  * 2018.2.8 J.Kawahara ver.1.02 Firebase 対応
+ * 2018.2.16 J.Kawahara ver.1.03 丸型アイコンを変更
  */
 class MainActivity : AppCompatActivity() {
 
