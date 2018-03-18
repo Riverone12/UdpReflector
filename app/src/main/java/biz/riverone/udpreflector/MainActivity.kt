@@ -13,6 +13,9 @@ import android.widget.EditText
 import android.widget.Switch
 import android.widget.TextView
 import biz.riverone.udpreflector.services.UdpReflectorService
+import com.google.android.gms.ads.AdRequest
+import com.google.android.gms.ads.AdView
+import com.google.android.gms.ads.MobileAds
 
 /**
  * UDPリフレクター
@@ -21,6 +24,7 @@ import biz.riverone.udpreflector.services.UdpReflectorService
  * 2018.2.7 J.Kawahara ver.1.00 初版公開
  * 2018.2.8 J.Kawahara ver.1.02 Firebase 対応
  * 2018.2.16 J.Kawahara ver.1.03 丸型アイコンを変更
+ * 2018.3.10 J.Kawahara ver.1.04 AdMob を追加
  */
 class MainActivity : AppCompatActivity() {
 
@@ -42,6 +46,12 @@ class MainActivity : AppCompatActivity() {
         requestedOrientation = ActivityInfo.SCREEN_ORIENTATION_PORTRAIT
 
         initializeControls()
+
+        // AdMob
+        MobileAds.initialize(applicationContext, "ca-app-pub-1882812461462801~4821961708")
+        val adView = findViewById<AdView>(R.id.adView)
+        val adRequest = AdRequest.Builder().build()
+        adView.loadAd(adRequest)
     }
 
     private val textWatcher = object: TextWatcher {

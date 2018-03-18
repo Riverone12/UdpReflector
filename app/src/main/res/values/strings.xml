@@ -1,6 +1,13 @@
 <resources>
     <string name="app_name">UDPリフレクター</string>
 
+    <!---->
+    <string name="banner_ad_unit_id">ca-app-pub-1882812461462801/5001515980</string>
+    <!---->
+    <!-- Test
+    <string name="banner_ad_unit_id">ca-app-pub-3940256099942544/6300978111</string>
+    -->
+
     <string name="label_my_address">このデバイスの現在のIP</string>
     <string name="label_receive_port">受信ポート</string>
 
